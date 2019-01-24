@@ -1,10 +1,12 @@
 
+
 @media screen and (max-width: 3000px) {
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .intro{
@@ -39,8 +41,6 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     height: 27rem; 
- 
-   
 
 }
 a{
@@ -141,6 +141,7 @@ a{
   display: none;
 }
 .about-me{
+
   height: 96%;
   background-color:white;
   border-style: double;
@@ -226,20 +227,21 @@ li{
 }
 }
 @media screen and (max-width: 677px) {
-.intro{
+  .intro{
+
     height: 100%;
     width: 100%;
-
-}
-.background{
+  }
+  .background{
 
     background-image:url(natural.jpg);
     height: 100%;
     width: 100%;
     z-index: -2;
     background-color: #cace80;
-}
-.my-info{
+  }
+
+  .my-info{
 
     background-image: none;
     position: absolute;
@@ -284,7 +286,6 @@ li{
     border-radius: 50%;
 
   }
-
 
   .github{
 
@@ -333,6 +334,7 @@ li{
     display: none;
   }
   .about-me{
+
     height: -webkit-fill-available;
     background-color:white;
     border-style: double;

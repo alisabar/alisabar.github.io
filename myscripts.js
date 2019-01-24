@@ -11,7 +11,6 @@ $(document).ready(function(){
             for (i = 1; i <= 3; i++) {
               
                 var x=i;
-                 console.log("i: "+i+" x: "+x);
 
                 $("li:nth-child("+i+")").css({ "animation-name": "fade-in","animation-duration":"2s",
                     "animation-delay":x+"s","animation-fill-mode":"forwards"});
