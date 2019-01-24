@@ -487,7 +487,7 @@ li{
     display: none;
   }
   .about-me{
-    height: -webkit-fill-available;
+    height: 100%;
     background-color:white;
     border-style: double;
     border-color: #cace80;
