@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /* overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; */
+}
+.navbar{
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+.navbar ul li a:hover{
+    color: skyblue;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    width:100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+section h1{
+    font-size: 4rem;
+}
+section p{
+    font-size: 1.5rem;
+ 
+}
+.introduction{
+    width: 80%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.about-me{
+    
+    color: rgb(255, 255, 255);
+}
+iframe{
+   margin-top: 5%;
+}
+.iscore{
+    color: aliceblue;
+}
+
+/*carousel*/
+.carousel{
+    position: relative;
+    height: 600px;
+    width:100%;
+    margin: 0 auto;
+}
+.carousel__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel__track-container{
+  
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+}
+.carousel__track{ /*ul*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel__slide{/*li*/
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel__button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer
+}
+.carousel__button--left{
+    left:-40px;
+}
+.carousel__button--right{
+    right:-40px;
+}
+.carousel__button img{
+    width:20px;
+
+}
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.carousel__indicator{
+    border:0;
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    background-color:rgba(0, 0, 0, .3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+.carousel__indicator.current-slide{
+    background: rgba(0, 0, 0, .75);
+}
+
+.is-hidden{
+    display: none;
+}
+.social {
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.github{
+    background-image: url(images/github.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+}
+.linkedin{
+    background-image: url(images/linkedin.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 5.6rem;
+    height: 5.6rem;
+    display: inline-block;
+}
+
+/*Section Images*/
+
+section#home{
+    background: url(./images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg) no-repeat center 
+    center/cover;
+}
+section#about{
+    background: url(./images/imattsmart-84a31uygTxc-unsplash.jpg) no-repeat center 
+    center/cover;
+}
+section#service{
+    background: url(./images/aleksandar-kyng-dhkdfFxGHfU-unsplash.jpg) no-repeat center 
+    center/cover;
+}
+section#contact{
+    background: url(./images/ian-schneider-TamMbr4okv4-unsplash.jpg) no-repeat center
+    center/cover;
+}
+
+@media screen and (max-width: 1750px) {
+    .carousel{
+        position: relative;
+        height: 425px;
+        width:65%;
+        margin: 0 auto;
+    }
+    .carousel__track-container{
+  
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5%;
+    }
+
+}

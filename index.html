@@ -1,52 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="./style.css">
 
- <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <title>Alisa Barsky</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"> 
-    </script>
-    <script src="myscripts.js"></script>
-  </head>
-  <body>
-<div class="intro">
-    <div class="background"></div>
-    <div class="name">Alisa Barsky Suchman</div>
-    <div class="my-info">
-       
-        <div class="profile"></div>
-        <div class="title">Software Developer</div>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Alisa Website
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">TV Shows</a></li>
+                <li><a href="#service">Iscore</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <article class="about-me">
+                <h1>Welcome To My SIte</h1>
+                <p>My name is Alisa. I am a software developer. I like technology and solving problems. Welcome to my portfolio website. </p>
+            </article>
+            
+            
+        </section>
+        <section id="about" class="tv-shows">
+            <article class="introduction">
+                <h2>My Favorite TV Shows</h2>
+                <p>The app I am currently working on. It was built using React Native and Node-js. It suits android phone and alows the
+                    user to search for his favorite tv shows and store them in a list.</p>
+            </article>
+            <div class="carousel_container">
+                
+                <div class="carousel">
+
+                    <button class="carousel__button carousel__button--left is-hidden">
+                        <img src="./images/left.png" alt="">
+                    </button>
+
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <img class="carousel__img" src="./images/register.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/home-page.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/tvshow.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/favorites.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/anothertvshow.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/favorites2.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/delete.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/confirmdelete.png" alt="">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__img" src="./images/afterdelete.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="carousel__button carousel__button--right">
+                        <img src="./images/right.png" alt="">
+                    </button>
+
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+        <section id="service">
+            <article class="iscore">
+                <h2>Iscore</h2>
+                <p>Tournament management system. This is my final projrct from my studies for software engineering at Shenkar college. </p>
+            </article>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_8Yew6Hn0pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="contact">
+            <article class="contact">
+                <h1>Contact Me</h1>
+                <div class="social">
+                    <a href="https://github.com/alisabar" class="github"></a>
+                    <a href="https://www.linkedin.com/in/alisa-barsky-suchman/" class="linkedin"></a></div>
+            </article>
+
+        </section>
     </div>
+    
+    <script src="js/script.js"></script>
+    <script src="carousel/carousel.js"></script>
+</body>
 
-    <div class="hide scroll-hint"><i class="fas fa-arrow-down"></i></div>
-
-</div>
-
-<div class="about-me">
-    <div class="heading"><span class="me">About Me</span></div>
-    <ul>
-        <li class="me">Graduate of Shenkar College of Engineering, Design and Art.</li>
-        <li class="me">My final project won to be one of the excellent projects.</li>
-        <li class="me">Highly motivated to learn, create, and contribute all my energy.</li>
-
-    </ul>
-        <div class="social"><a href="https://github.com/alisabar" class="github"></a><a href="https://www.linkedin.com/in/alisa-barsky-suchman/" class="linkedin"></a></div>
-        <div class="thanks">Thank`s for reading!</div>
-</div>
-
-
-<!-- 
-   &#11167;
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
-
-  </body>
 </html>
